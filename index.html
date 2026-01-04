@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Text Summarizer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="main">
+      <div class="title">Text Summarizer</div>
+      <div class="sub-title">Ready to summarize — Paste 500–750 words</div>
+    </div>
+
+    <div class="body">
+      <div class="hai">Hi — paste your text and press <strong>Summarize</strong>.</div>
+
+      <form id="summarizerForm" onsubmit="return false;">
+        <label for="title">Title</label>
+        <input id="title" type="text" class="input-title" placeholder="Title" />
+
+        <label for="text">Text</label>
+        <textarea id="text" class="input-text" placeholder="Paste text here..."></textarea>
+
+        <label for="author">Author</label>
+        <input id="author" type="text" class="input-author" placeholder="Author" />
+
+        <button id="summarize-button" type="button" class="button-send">Summarize</button>
+      </form>
+    </div>
+
+    <div class="summary-section">
+      <div class="summary">Summary</div>
+      <div id="summary-box" class="summary-box"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
